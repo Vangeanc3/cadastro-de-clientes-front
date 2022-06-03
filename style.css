@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    /* A cada 1rem será considerado 10px */
+    font-size: 62,5%;
+}
+
+body{
+    /* 100vh é uma tela inteira */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    border: 1px solid black;
+    width: 50rem;
+    height: 35rem;
+}
+
+.form-container h2{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem 0 5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.itens-container{
+    display: flex;
+    margin-top: 10rem;
+}
+
+.codigo{
+    width: 6rem;
+}
+
+.produto{
+    width: 13rem;
+}
+
+.quant{
+    width: 6rem;
+}
+
+.preco{
+    width: 13rem;
+}
+
+.desc{
+    width: 6rem;
+}
