@@ -15,23 +15,64 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 2s;
+    background: black;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateX(50rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
 }
 
 .form-container{
+    background: white;
     border: 1px solid black;
     width: 50rem;
     height: 35rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px white;
+    animation: aparecer 3s;
+}
+
+.form-titulo{
+    background: orange;
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-titulo img{
+    height: 100%;
 }
 
 .form-container h2{
-    margin: 1rem 0 1rem 0;
+    background: orange;
+    height: 2rem;
+    margin: 0 0 0 0;
     text-align: center;
+    width: 100%;
+    margin-right: 20rem;
 }
 
 .form-item{
     display: flex;
     flex-direction: column;
-    margin: 1rem 5rem 0 5rem;
+    margin: 1rem 3rem 0 1rem;
+}
+
+.form-item input{
+    border-radius: .4rem;
+}
+
+.form-item:nth-child(1){
+    margin-top: 5rem;
 }
 
 form{
@@ -43,25 +84,59 @@ form{
 
 .itens-container{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 3rem;
 }
 
 .codigo{
     width: 6rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+
+.first-label{
+    margin-left: 1rem;
 }
 
 .produto{
     width: 13rem;
+    border-radius: .4rem;
 }
 
 .quant{
     width: 6rem;
+    border-radius: .4rem;
 }
 
 .preco{
     width: 13rem;
+    border-radius: .4rem;
 }
 
 .desc{
     width: 6rem;
+    border-radius: .4rem;
+}
+
+.btn{
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    padding: .3rem;
+    width: 5rem;
+    margin-top: 3rem;
+    align-self: center;
+    transition: 2s;
+    color: black;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: rgb(0, 119, 255);
+    transition: 2s;
+}
+
+.btn-erro{
+    align-self: center;
+    margin-top: 1rem;
+    color: blue;
 }

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cadastro{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 40vw;
+    margin: 3rem auto 0 auto;
+    height: 80vh;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.campos{
+    margin: 10rem 0rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lado{
+
+}
+
+.campos input{
+
+    margin: .2rem 1rem .2rem 1rem;
+    border-radius: 2px;
+}
+
+.select{
+    margin: 4rem 0 .2rem 0;
+    display: inline;
+}
+
+button{
+    margin-top: 100px;
+    padding: 5px;
+}
